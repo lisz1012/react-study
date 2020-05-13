@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>JsxDemo</title>
-    <script src="node_modules/react/umd/react.development.js" />
-    <script src="node_modules/react-dom/umd/react-dom.development.js" />
-    <script src="node_modules/babel-standalone/babel.min.js" />
+    <!-- 还不能写成：<script src="node_modules/react/umd/react.development.js" /> -->
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
 </head>
 <body>
     <div id="demoReact">
 
     </div>
-    <script type="text/babel"> //这里是type，容易写错，坑
+    <script type="text/babel"> // 这里是type，不是src
         let myDom = <div>hello</div>
         ReactDOM.render(myDom, document.getElementById("demoReact"))
     </script>
