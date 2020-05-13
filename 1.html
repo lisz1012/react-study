@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="reactDom"></div>
+    <script type="text/babel">
+        // 使用表达式, 把表达式放到{}里面
+        let text = "hello!!!"
+        let num = 123456
+
+        function fun(obj) {
+            // return "Name：" + obj.name + " age: " + obj.age
+            // ES6 模板语法
+            return `Name: ${obj.name}, age: ${obj.age}`
+        }
+        {/*调用函数*/}
+        let user = {
+            name:"Zhang San",
+            age:18
+        }
+        let myDom = (<div>
+                <div>{text}</div>
+                <div>{num}</div>
+                {/*计算*/}
+                <div>{num + 1}</div>
+                {/*调用函数*/}
+                <div>{fun(user)}</div>
+            </div>)
+        ReactDOM.render(myDom, document.getElementById("reactDom"))
+    </script>
+</body>
+</html>
