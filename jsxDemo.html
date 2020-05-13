@@ -13,10 +13,11 @@
 
     </div>
     <script type="text/babel"> // 这里是type，不是src
-        let myDom = <div>
-            {/*Comments*/}
-                        hello
-                    </div>
+        let myDom = (<div>
+                        {/*多个标签要使用一个父元素把他们包裹起来，成一个整体. 最好再有一对圆括号包裹*/}
+                        <div>1</div>
+                        <div>2</div>
+                    </div>)
         ReactDOM.render(myDom, document.getElementById("demoReact"))
     </script>
 </body>
