@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.js"></script>
+</head>
+<body>
+    <!-- 根节点 -->
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+        // jsx 效率更高、编译器件就可以发现错误、编写模板更简单快速
+        let myDom = <h1>你好世界!</h1>
+        ReactDOM.render(myDom, document.getElementById("reactDemo"))
+    </script>
+</body>
+</html>
