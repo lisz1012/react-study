@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JsxDemo</title>
+    <script src="node_modules/react/umd/react.development.js" />
+    <script src="node_modules/react-dom/umd/react-dom.development.js" />
+    <script src="node_modules/babel-standalone/babel.min.js" />
+</head>
+<body>
+    <div id="demoReact">
+
+    </div>
+    <script type="text/babel"> //这里是type，容易写错，坑
+        let myDom = <div>hello</div>
+        ReactDOM.render(myDom, document.getElementById("demoReact"))
+    </script>
+</body>
+</html>
