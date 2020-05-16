@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改样式</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="demoDiv"></div>
+    <script type="text/babel">
+        let s = {color : "red", backgroundColor : "pink"} // 自己试出来的，爽
+        let myDom = <p style={s}>修改样式</p>
+        ReactDOM.render(myDom, document.getElementById("demoDiv"))
+    </script>
+</body>
+</html>

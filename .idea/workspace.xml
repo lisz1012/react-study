@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="790bdb33-225c-48fc-97d5-4504adf0e668" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/4_数组.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_标签属性设置.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/1_变量对象与函数.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -32,23 +35,41 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.1.html">
-    <configuration name="1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/1.html" useBuiltInWebServerPort="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.7_className代替class.html">
+    <configuration name="3_三目运算.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/3_三目运算.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="4_数组.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/4_数组.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="5_标签属性设置.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/5_标签属性设置.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="6_修改样式.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/6_修改样式.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="7_className代替class.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/7_className代替class.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
-      <method v="2" />
-    </configuration>
-    <configuration name="hello.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/react-study/hello.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="jsxDemo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/jsxDemo.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -63,16 +84,20 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
-      <item itemvalue="JavaScript Debug.hello.html" />
-      <item itemvalue="JavaScript Debug.jsxDemo.html" />
-      <item itemvalue="JavaScript Debug.1.html" />
       <item itemvalue="npm.npm start" />
+      <item itemvalue="JavaScript Debug.3_三目运算.html" />
+      <item itemvalue="JavaScript Debug.4_数组.html" />
+      <item itemvalue="JavaScript Debug.5_标签属性设置.html" />
+      <item itemvalue="JavaScript Debug.6_修改样式.html" />
+      <item itemvalue="JavaScript Debug.7_className代替class.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.1.html" />
-        <item itemvalue="JavaScript Debug.jsxDemo.html" />
-        <item itemvalue="JavaScript Debug.hello.html" />
+        <item itemvalue="JavaScript Debug.7_className代替class.html" />
+        <item itemvalue="JavaScript Debug.6_修改样式.html" />
+        <item itemvalue="JavaScript Debug.5_标签属性设置.html" />
+        <item itemvalue="JavaScript Debug.4_数组.html" />
+        <item itemvalue="JavaScript Debug.3_三目运算.html" />
       </list>
     </recent_temporary>
   </component>
@@ -87,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589325827617</updated>
       <workItem from="1589325830354" duration="8570000" />
-      <workItem from="1589581625803" duration="858000" />
+      <workItem from="1589581625803" duration="4801000" />
     </task>
     <servers />
   </component>
@@ -95,6 +120,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="419" y="-862" key="#ESLint" timestamp="1589639493551">
+      <screen x="-141" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="419" y="-862" key="#ESLint/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589639493551" />
     <state x="418" y="-862" key="#Web_Browsers" timestamp="1589332223627">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>

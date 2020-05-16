@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>className代替class</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+    <style>
+        .demoStyle {
+            color: cornflowerblue;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <div id="demoDiv"></div>
+    <script type="text/babel">
+        //注意：在jsx中，不能使用class这个属性，因为class是js关键字，应将其替换为"className"
+        let classDom = <p className="demoStyle">Class Style</p>
+        ReactDOM.render(classDom, document.getElementById("demoDiv"))
+    </script>
+</body>
+</html>

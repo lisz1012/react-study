@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三目运算</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="reactDom"></div>
+    <script type="text/babel">
+        // 三目运算
+        let price= 3999
+        let myDom = (
+            <div>当前实际价格是: {price} ------ {price > 4000 ? "很贵" : "很便宜"}</div>
+        )
+        ReactDOM.render(myDom, document.getElementById("reactDom"))
+    </script>
+</body>
+</html>
