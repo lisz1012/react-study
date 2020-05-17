@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回顾</title>
+</head>
+<body>
+    <script>
+        var obj = {
+            name : "xiaoming",
+            age : 18
+        }
+        console.log(obj.name)
+        console.log(obj["age"])
+        // 两种方式都可以成功取出，点的方式方便很多，但是key如果是个变量，就不能使用点的方式取值，[]此时有点像hash
+        console.log(Object.keys(obj)) // 会返回一个数组，类型的数据，它的值是对象当中的键
+        console.log(Object.values(obj)) // 会返回一个数组，类型的数据，它的值是对象当中的值
+    </script>
+</body>
+</html>

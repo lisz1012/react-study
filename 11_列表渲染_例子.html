@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表渲染_for_in_with_Function</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="demoDiv"></div>
+    <script type="text/babel">
+        let arr = ["吃饭", "睡觉", "打豆豆"]
+        let index = -1 // 这一句写在fun里面不行，点击p元素之后会使index=i，这时并不是直接显示p元素，而是调用render之后再调用fun，如果写在fun里面，就又重新初始化覆盖index=i了
+        function fun() {
+            let myDom = arr.map((v, i)=>{
+                // return (<p key={i} onClick={()=>{console.log("Hello")}}>{v}</p>) // 不能直接写成onClick={console.log("Hello")}
+                return (<p style={{color: i == index ? 'red' : ''}} key={i} onClick={()=>{index=i;render()}}>{v}</p>) // 这里的render只是注册一下
+            })
+            return myDom
+        }
+
+        function render() {
+            ReactDOM.render(fun(), document.getElementById("demoDiv"))
+        }
+        render()
+    </script>
+</body>
+</html>

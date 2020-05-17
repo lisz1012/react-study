@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="790bdb33-225c-48fc-97d5-4504adf0e668" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/4_数组.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5_标签属性设置.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_列表渲染_例子.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_列表渲染_for_in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/回顾.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/1_变量对象与函数.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,23 +53,23 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.7_className代替class.html">
-    <configuration name="3_三目运算.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/3_三目运算.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.12_对象遍历.html">
+    <configuration name="10_列表渲染_for_in_with_Function.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/10_列表渲染_for_in_with_Function.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="4_数组.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/4_数组.html" useBuiltInWebServerPort="true">
+    <configuration name="11_列表渲染_例子.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/11_列表渲染_例子.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="5_标签属性设置.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/5_标签属性设置.html" useBuiltInWebServerPort="true">
+    <configuration name="11_列表渲染_for_each.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/11_列表渲染_for_each.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="6_修改样式.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/6_修改样式.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="7_className代替class.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/7_className代替class.html" useBuiltInWebServerPort="true">
+    <configuration name="12_对象遍历.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/12_对象遍历.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="回顾.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/回顾.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -85,19 +85,19 @@
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
       <item itemvalue="npm.npm start" />
-      <item itemvalue="JavaScript Debug.3_三目运算.html" />
-      <item itemvalue="JavaScript Debug.4_数组.html" />
-      <item itemvalue="JavaScript Debug.5_标签属性设置.html" />
-      <item itemvalue="JavaScript Debug.6_修改样式.html" />
-      <item itemvalue="JavaScript Debug.7_className代替class.html" />
+      <item itemvalue="JavaScript Debug.10_列表渲染_for_in_with_Function.html" />
+      <item itemvalue="JavaScript Debug.11_列表渲染_for_each.html" />
+      <item itemvalue="JavaScript Debug.11_列表渲染_例子.html" />
+      <item itemvalue="JavaScript Debug.回顾.html" />
+      <item itemvalue="JavaScript Debug.12_对象遍历.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.7_className代替class.html" />
-        <item itemvalue="JavaScript Debug.6_修改样式.html" />
-        <item itemvalue="JavaScript Debug.5_标签属性设置.html" />
-        <item itemvalue="JavaScript Debug.4_数组.html" />
-        <item itemvalue="JavaScript Debug.3_三目运算.html" />
+        <item itemvalue="JavaScript Debug.12_对象遍历.html" />
+        <item itemvalue="JavaScript Debug.回顾.html" />
+        <item itemvalue="JavaScript Debug.11_列表渲染_例子.html" />
+        <item itemvalue="JavaScript Debug.11_列表渲染_for_each.html" />
+        <item itemvalue="JavaScript Debug.10_列表渲染_for_in_with_Function.html" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589325827617</updated>
       <workItem from="1589325830354" duration="8570000" />
-      <workItem from="1589581625803" duration="4801000" />
+      <workItem from="1589581625803" duration="13955000" />
     </task>
     <servers />
   </component>
@@ -136,22 +136,54 @@
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
     <state x="684" y="-624" key="Github.ShareDialog/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589328189257" />
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1589329840406">
+    <state width="1878" height="357" key="GridCell.Tab.0.bottom" timestamp="1589671951670">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589329840406" />
-    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1589329840406">
+    <state width="1878" height="357" key="GridCell.Tab.0.bottom/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951670" />
+    <state width="1878" height="357" key="GridCell.Tab.0.center" timestamp="1589671951669">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.center/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589329840406" />
-    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1589329840405">
+    <state width="1878" height="357" key="GridCell.Tab.0.center/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951669" />
+    <state width="1878" height="357" key="GridCell.Tab.0.left" timestamp="1589671951669">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.left/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589329840405" />
-    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1589329840406">
+    <state width="1878" height="357" key="GridCell.Tab.0.left/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951669" />
+    <state width="1878" height="357" key="GridCell.Tab.0.right" timestamp="1589671951670">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.right/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589329840406" />
+    <state width="1878" height="357" key="GridCell.Tab.0.right/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951670" />
+    <state width="1878" height="357" key="GridCell.Tab.1.bottom" timestamp="1589671951671">
+      <screen x="-141" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="357" key="GridCell.Tab.1.bottom/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951671" />
+    <state width="1878" height="357" key="GridCell.Tab.1.center" timestamp="1589671951670">
+      <screen x="-141" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="357" key="GridCell.Tab.1.center/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951670" />
+    <state width="1878" height="357" key="GridCell.Tab.1.left" timestamp="1589671951670">
+      <screen x="-141" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="357" key="GridCell.Tab.1.left/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951670" />
+    <state width="1878" height="357" key="GridCell.Tab.1.right" timestamp="1589671951671">
+      <screen x="-141" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="357" key="GridCell.Tab.1.right/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951671" />
+    <state width="1878" height="357" key="GridCell.Tab.2.bottom" timestamp="1589671951672">
+      <screen x="-141" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="357" key="GridCell.Tab.2.bottom/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951672" />
+    <state width="1878" height="357" key="GridCell.Tab.2.center" timestamp="1589671951671">
+      <screen x="-141" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="357" key="GridCell.Tab.2.center/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951671" />
+    <state width="1878" height="357" key="GridCell.Tab.2.left" timestamp="1589671951671">
+      <screen x="-141" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="357" key="GridCell.Tab.2.left/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951671" />
+    <state width="1878" height="357" key="GridCell.Tab.2.right" timestamp="1589671951672">
+      <screen x="-141" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="357" key="GridCell.Tab.2.right/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951672" />
     <state x="475" y="-694" key="com.intellij.ide.util.TipDialog" timestamp="1589582011251">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
