@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="790bdb33-225c-48fc-97d5-4504adf0e668" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/11_列表渲染_例子.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_列表渲染_for_in.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/回顾.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,24 +43,24 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.12_对象遍历.html">
-    <configuration name="10_列表渲染_for_in_with_Function.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/10_列表渲染_for_in_with_Function.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="11_列表渲染_例子.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/11_列表渲染_例子.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="11_列表渲染_for_each.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/11_列表渲染_for_each.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.13_面向组件_3_类组件.html">
     <configuration name="12_对象遍历.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/12_对象遍历.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="13_面向组件_2_父子组件.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/13_面向组件_2_父子组件.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="13_面向组件_3_类组件.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/13_面向组件_3_类组件.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="13_面向组件.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/react-study/13_面向组件.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -84,20 +81,20 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
-      <item itemvalue="npm.npm start" />
-      <item itemvalue="JavaScript Debug.10_列表渲染_for_in_with_Function.html" />
-      <item itemvalue="JavaScript Debug.11_列表渲染_for_each.html" />
-      <item itemvalue="JavaScript Debug.11_列表渲染_例子.html" />
       <item itemvalue="JavaScript Debug.回顾.html" />
       <item itemvalue="JavaScript Debug.12_对象遍历.html" />
+      <item itemvalue="npm.npm start" />
+      <item itemvalue="JavaScript Debug.13_面向组件.html" />
+      <item itemvalue="JavaScript Debug.13_面向组件_2_父子组件.html" />
+      <item itemvalue="JavaScript Debug.13_面向组件_3_类组件.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.13_面向组件_3_类组件.html" />
+        <item itemvalue="JavaScript Debug.13_面向组件_2_父子组件.html" />
+        <item itemvalue="JavaScript Debug.13_面向组件.html" />
         <item itemvalue="JavaScript Debug.12_对象遍历.html" />
         <item itemvalue="JavaScript Debug.回顾.html" />
-        <item itemvalue="JavaScript Debug.11_列表渲染_例子.html" />
-        <item itemvalue="JavaScript Debug.11_列表渲染_for_each.html" />
-        <item itemvalue="JavaScript Debug.10_列表渲染_for_in_with_Function.html" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +109,8 @@
       <option name="presentableId" value="Default" />
       <updated>1589325827617</updated>
       <workItem from="1589325830354" duration="8570000" />
-      <workItem from="1589581625803" duration="13955000" />
+      <workItem from="1589581625803" duration="14322000" />
+      <workItem from="1590107780897" duration="2839000" />
     </task>
     <servers />
   </component>
@@ -136,54 +134,54 @@
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
     <state x="684" y="-624" key="Github.ShareDialog/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589328189257" />
-    <state width="1878" height="357" key="GridCell.Tab.0.bottom" timestamp="1589671951670">
+    <state width="1878" height="357" key="GridCell.Tab.0.bottom" timestamp="1590114223888">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="357" key="GridCell.Tab.0.bottom/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951670" />
-    <state width="1878" height="357" key="GridCell.Tab.0.center" timestamp="1589671951669">
+    <state width="1878" height="357" key="GridCell.Tab.0.bottom/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1590114223888" />
+    <state width="1878" height="357" key="GridCell.Tab.0.center" timestamp="1590114223887">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="357" key="GridCell.Tab.0.center/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951669" />
-    <state width="1878" height="357" key="GridCell.Tab.0.left" timestamp="1589671951669">
+    <state width="1878" height="357" key="GridCell.Tab.0.center/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1590114223887" />
+    <state width="1878" height="357" key="GridCell.Tab.0.left" timestamp="1590114223886">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="357" key="GridCell.Tab.0.left/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951669" />
-    <state width="1878" height="357" key="GridCell.Tab.0.right" timestamp="1589671951670">
+    <state width="1878" height="357" key="GridCell.Tab.0.left/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1590114223886" />
+    <state width="1878" height="357" key="GridCell.Tab.0.right" timestamp="1590114223888">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="357" key="GridCell.Tab.0.right/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951670" />
-    <state width="1878" height="357" key="GridCell.Tab.1.bottom" timestamp="1589671951671">
+    <state width="1878" height="357" key="GridCell.Tab.0.right/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1590114223888" />
+    <state width="1878" height="357" key="GridCell.Tab.1.bottom" timestamp="1590114223890">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="357" key="GridCell.Tab.1.bottom/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951671" />
-    <state width="1878" height="357" key="GridCell.Tab.1.center" timestamp="1589671951670">
+    <state width="1878" height="357" key="GridCell.Tab.1.bottom/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1590114223890" />
+    <state width="1878" height="357" key="GridCell.Tab.1.center" timestamp="1590114223889">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="357" key="GridCell.Tab.1.center/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951670" />
-    <state width="1878" height="357" key="GridCell.Tab.1.left" timestamp="1589671951670">
+    <state width="1878" height="357" key="GridCell.Tab.1.center/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1590114223889" />
+    <state width="1878" height="357" key="GridCell.Tab.1.left" timestamp="1590114223889">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="357" key="GridCell.Tab.1.left/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951670" />
-    <state width="1878" height="357" key="GridCell.Tab.1.right" timestamp="1589671951671">
+    <state width="1878" height="357" key="GridCell.Tab.1.left/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1590114223889" />
+    <state width="1878" height="357" key="GridCell.Tab.1.right" timestamp="1590114223890">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="357" key="GridCell.Tab.1.right/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951671" />
-    <state width="1878" height="357" key="GridCell.Tab.2.bottom" timestamp="1589671951672">
+    <state width="1878" height="357" key="GridCell.Tab.1.right/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1590114223890" />
+    <state width="1878" height="357" key="GridCell.Tab.2.bottom" timestamp="1590114223891">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="357" key="GridCell.Tab.2.bottom/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951672" />
-    <state width="1878" height="357" key="GridCell.Tab.2.center" timestamp="1589671951671">
+    <state width="1878" height="357" key="GridCell.Tab.2.bottom/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1590114223891" />
+    <state width="1878" height="357" key="GridCell.Tab.2.center" timestamp="1590114223891">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="357" key="GridCell.Tab.2.center/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951671" />
-    <state width="1878" height="357" key="GridCell.Tab.2.left" timestamp="1589671951671">
+    <state width="1878" height="357" key="GridCell.Tab.2.center/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1590114223891" />
+    <state width="1878" height="357" key="GridCell.Tab.2.left" timestamp="1590114223890">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="357" key="GridCell.Tab.2.left/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951671" />
-    <state width="1878" height="357" key="GridCell.Tab.2.right" timestamp="1589671951672">
+    <state width="1878" height="357" key="GridCell.Tab.2.left/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1590114223890" />
+    <state width="1878" height="357" key="GridCell.Tab.2.right" timestamp="1590114223891">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="357" key="GridCell.Tab.2.right/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1589671951672" />
+    <state width="1878" height="357" key="GridCell.Tab.2.right/-141.-1057.1920.1057/0.23.1680.953@-141.-1057.1920.1057" timestamp="1590114223891" />
     <state x="475" y="-694" key="com.intellij.ide.util.TipDialog" timestamp="1589582011251">
       <screen x="-141" y="-1057" width="1920" height="1057" />
     </state>

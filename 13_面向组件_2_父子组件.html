@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+
+        function MyComA() {
+            return (
+                <h1>我是第一个组件</h1>
+            )
+        }
+        function MyComB() {
+            return (
+                <h1>我是第二个组件</h1>
+            )
+        }
+        function MyComC() {
+            return (
+                <h1>我是第三个组件</h1>
+            )
+        }
+        function MyComD() {
+            return (
+                <h1>我是第四个组件</h1>
+            )
+        }
+
+        function Com() {
+            return (
+                <div><MyComA/><MyComB/><MyComC/><MyComD/></div>
+            )
+        }
+        let com = <Com/>
+        ReactDOM.render(com, document.getElementById("reactDemo")) //可以根据class找，只要能找到根节点
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+       class MyCom extends React.Component {
+           render() {
+               return (
+                   <div>类组件</div>
+               )
+           }
+       }
+       let com = <MyCom/>
+        ReactDOM.render(com, document.getElementById("reactDemo")) //可以根据class找，只要能找到根节点
+    </script>
+</body>
+</html>
