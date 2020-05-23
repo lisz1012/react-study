@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+        // props可以由外向内，由父向子传递参数数据
+        // 无论是无状态组件还是类组件，都不能修改自身的props，因为react是单向的
+        // 自己试出来的，太高兴啦！！！
+        class MyCom extends React.Component{
+            render() {
+                return (
+                    <div><p>{this.props.text}</p><p>{this.props.num}</p></div>
+                )
+            }
+        }
+        let obj = {
+            text: "TEXT",
+            num: 111
+        }
+        //ReactDOM.render(<MyCom text="TEXT" num="111"/>, document.getElementById("reactDemo")) // 这一种和下面这种都行
+        ReactDOM.render(<MyCom {...obj}/>, document.getElementById("reactDemo")) //...扩展运算符把obj展开
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+        // props可以由外向内，由父向子传递参数数据
+        // 无论是无状态组件还是类组件，都不能修改自身的props，因为react是单向的
+        function Com(props) {
+            return (
+                <div>我是一个无状态组件------ 外部传递的数据是：{props.text} --- {props.num}</div>
+            )
+        }
+        let demo = "我是个props参数"
+        let num = 111
+        ReactDOM.render(<Com text={demo} num={num}/>, document.getElementById("reactDemo")) //可以根据class找，只要能找到根节点
+    </script>
+</body>
+</html>
