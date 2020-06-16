@@ -14,13 +14,13 @@
     <script type="text/babel">
         // props可以由外向内，由父向子传递参数数据
         // 无论是无状态组件还是类组件，都不能修改自身的props，因为react是单向的
-        function Com(props) {
+        function Com(props) { // props这里可以换成任意变量名，应该就是接受了下面的obj参数
             return (
                 <div>我是一个无状态组件------ 外部传递的数据是：{props.text} --- {props.num}</div>
             )
         }
         let obj = {
-            text: "TEXT",
+            text: "TEXT", // 必须跟无状态组件接受的形参名字相同
             num: 111
         }
         ReactDOM.render(<Com {...obj}/>, document.getElementById("reactDemo")) //...扩展运算符把obj展开
