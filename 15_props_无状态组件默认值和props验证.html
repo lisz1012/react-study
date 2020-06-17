@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+    <script src="node_modules/prop-types/prop-types.js"></script>
+</head>
+<body>
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+        // 无状态组件的props验证和默认值
+        // 无状态组件想要设置默认值，要用 defaultProps
+        function Com(props) {
+            return <div>我是无状态组件 ----- {props.name} 年龄：{props.age}</div>
+        }
+        // 16 版本
+        Com.defaultProps = {
+            name: "我是props,name的默认值"
+            //age: 3
+        }
+        // 15 版本使用||的方式来完成
+        //props.name = props.name || "我是props,name的默认值"
+
+        // props验证 --- 注意，开发模式only！线上模式要取消
+        // 1. 引用prop-type库：npm install --save prop-types
+        // 2. 引用<script src="node_modules/prop-types/prop-types.min.js" />
+        // 3. <组件名>.propTypes={xxx: PropTypes.number, ..., ... } 这里是各个变量的数据类型
+        // 有这个验证的时候，即使类型不对，也不影响页面的展示，只是会在控制台输出Warning
+        // 更多校验见官网：https://zh-hans.reactjs.org/docs/typechecking-with-proptypes.html
+        Com.propTypes = {
+            name: PropTypes.number,
+            age: PropTypes.number.isRequired //有默认值的话不会报Warning
+        }
+        let num = 111
+        let age = 20
+        ReactDOM.render(<Com name={num}/>, document.getElementById("reactDemo")) //...扩展运算符把obj展开
+
+    </script>
+</body>
+</html>

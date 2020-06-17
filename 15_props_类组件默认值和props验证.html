@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+    <script src="node_modules/prop-types/prop-types.js"></script>
+</head>
+<body>
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+        class Com extends React.Component {
+            static defaultProps={
+                name: "aaa"
+            }
+            render() {
+                return (<div>我是类组件 {this.props.name} {this.props.age}</div>)
+            }
+        }
+        Com.defaultProps={
+            age: 100
+        }
+        Com.propTypes={
+            name: PropTypes.number,
+            age: PropTypes.number.isRequired
+        }
+        let name = "张三"
+        ReactDOM.render(<Com name={name}/>, document.getElementById("reactDemo")) //...扩展运算符把obj展开
+
+    </script>
+</body>
+</html>

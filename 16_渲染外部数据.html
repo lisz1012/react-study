@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+    <script src="node_modules/prop-types/prop-types.js"></script>
+</head>
+<body>
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+        // 之前数据都是存在组件内部，如果我们想渲染的数据是从外部传递进来的怎么办？
+        // 点击"LOL英雄展示"，切换下面内容的显示和隐藏状态
+        let flag = false
+        let MyCom=(props)=>{
+            return (<div style={{display:flag?"block":"none"}}>
+                        {
+                            props.arr.map((v, i)=>{
+                                return <p key={i}>{v}</p>
+                            })
+                        }
+                    </div>)
+        }
+        let dataArr = ["寒冰", "盖伦", "蛮王"]
+        let Com=()=>{
+            return (<div>
+                        <h1 onClick={()=>{flag = !flag;render()}}>LOL英雄展示</h1>
+                        <MyCom arr={dataArr}/>
+                    </div>)
+        }
+        function render() {
+            ReactDOM.render(<Com/>, document.getElementById("reactDemo")) //...扩展运算符把obj展开
+        }
+        render()
+    </script>
+</body>
+</html>

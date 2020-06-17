@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+    <script src="node_modules/prop-types/prop-types.js"></script>
+</head>
+<body>
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+        // props是组件对外的接口，state是组件对内的接口
+        // 组件内可以引用其他组件，组件之间的引用就形成了一个树状结构。如果下层作践需要使用上层组件的数据，
+        // 上层组件就可以就用下层组件的props传递，因此props是组件对外的接口，它一旦被定义是不能被修改的。
+        // 组件除了使用上层组件传递来的数据之外，他自身也可能有需要管理的数据，这个队内管理数据的属性就是state
+        // react中我们开发者，只需要关心的是数据，当数据改变的时候页面你就会自动发生改变。state就等同于页面中
+        // 的数据，数据改变了，页面中对应的数据绑定内容就会被react自动改变。这叫"声明式渲染" --- 一切的数据
+        // 改变后的渲染更新操作都不用我们关心，只需要声明好数据，react就会自动对数据进行改变
+        /*
+        主要区别：
+        state可变，props只读，如果想修改props中的数据，只能修改当前组件的父组件中的内容
+         */
+
+        // 注意想使用状态state，不能使用无状态组件
+        class Com extends React.Component {
+            // 在ES6中，不管子类写不写constructor，在new实例的时候都会补上constructor
+            // 我们可以不写，但是如果我们写了，就必须在其中写上super，super就是指向父类的构造方法
+            constructor(props) {
+                // 如果想在constructor中使用props，super必须写上props
+                super(props)
+                // 定义state
+                this.state={
+                    name: "张三",
+                    age: 3
+                }
+            }
+            render() {
+                return (
+                    // 必须调用：this.setState({name: "李四"})，而不是this.state.name = ...
+                    // 而且this.setState是异步的，react会自动触发render()进行数据渲染
+                    // 虽然没有设置age，但是age并不会被空数据覆盖
+                    <div>
+                        <button onClick={()=>{this.setState({name: "李四"})}}>点我改名</button>
+                        <div>我是一个组件 name: {this.state.name} age: {this.state.age}</div>
+                    </div>
+                )
+            }
+        }
+
+        ReactDOM.render(<Com />, document.getElementById("reactDemo"))
+    </script>
+</body>
+</html>
