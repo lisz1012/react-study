@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- 转发refs react中提供了一个ref的数据（不能在无状态组件中使用，因为无状态组件没有实例）
+     表示当前组件的真正实例的引用，他会返回绑定当前属性的元素。标识组件内部的元素，方便我们查找
+     React中给我们3种方式：1。字符串的方式
+     2。回调函数（推荐）
+        在dom节点上面挂载函数，函数的入参形参是，效果和字符串方式是一样的
+     3。React.createRef() -> react 16.3新增-->
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+        class Com extends React.Component {
+            fun=()=>{
+                console.log(this.textInput.value)
+            }
+            render() {
+                return (
+                    <div>
+                    我是组件
+                        <input type="text" ref={(input)=>{this.textInput=input}} placeholder="请输入"/>
+                        <button onClick={this.fun}>点我得到输入框的值</button>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(<Com/>, document.getElementById("reactDemo")) //可以根据class找，只要能找到根节点
+    </script>
+</body>
+</html>

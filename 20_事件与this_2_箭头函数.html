@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- react时间处理 react绑定时间使用的是小驼峰命名法，在绑定函数的时候不能加()，否则函数会立即执行
+     1。修改this指向 1。bind方式原地绑定 2。函数通过尖箭头函数创建 3。在constructor中提前绑定 4。将把时间的调用写成箭头函数的调用方式-->
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+        class Com extends React.Component {
+            constructor(props) {
+                super(props);
+            }
+            render() {
+                return (
+                    <div>
+                        我是组件
+                        <button onClick={()=>{console.log(this)}}>bind方式绑定</button>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(<Com/>, document.getElementById("reactDemo")) //可以根据class找，只要能找到根节点
+    </script>
+</body>
+</html>
