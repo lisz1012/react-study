@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <!-- 运行之前要先安装：
+        npm i react --save
+        npm i react-dom --save
+        npm i babel-standalone --save
+        应该是分别对应上面的三个js文件 -->
+    <!-- 根节点 -->
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+        // 下面是jsx语法，其效率更高、编译期间就可以发现错误、编写模板更简单快速
+        // jsx中html标签必须按照W3C的规范来写，标签必须闭合
+        let fn = 'Fred'
+        let ln = 'Flintstone'
+        axios.post('/user',{
+            firstName:fn,
+            lastName:ln
+        })
+            .then(function(res){
+                console.log(res);
+            })
+            .catch(function(err){
+                console.log(err);
+            })
+
+        let myDom = <h1>你好世界!</h1>
+        ReactDOM.render(myDom, document.getElementById("reactDemo")) //可以根据class找，只要能找到根节点
+    </script>
+</body>
+</html>
