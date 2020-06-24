@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello</title>
+        <script src="node_modules/react/umd/react.development.js"></script>
+        <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+        <script src="node_modules/babel-standalone/babel.min.js"></script>
+    </head>
+    <body>
+    <!-- this.setState()是异步的 -->
+    <div id="reactDemo">
+
+    </div>
+    <script type="text/babel">
+        class Com extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    name: "嘻嘻",
+                    newHtml: "<p>我是state中的内容</p>"
+                }
+            }
+            // this.fun不要写（）否则不点击也会触发
+            /*字符串标签插入：dangerouslySetInnerHTML={{__HTML:要插入的字符串}}*/
+            fun=()=>{
+                this.setState({name: "哈哈"}, ()=>{console.log(this.state.name)})//写成callback会顺序执行
+                // console.log(this.state.name
+            }
+            render() {
+                return (
+                    <div>
+                        <button onClick={this.fun}>点我改名</button>
+                        {this.state.name}
+                        <div>{this.state.newHtml}</div>
+                        <div dangerouslySetInnerHTML={{__html:this.state.newHtml}}>
+
+                        </div>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(<Com />, document.getElementById("reactDemo")) //可以根据class找，只要能找到根节点
+    </script>
+    </body>
+</html>
