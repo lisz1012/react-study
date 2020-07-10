@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+<!-- 运行之前要先安装：
+    npm i react --save
+    npm i react-dom --save
+    npm i babel-standalone --save
+    应该是分别对应上面的三个js文件 -->
+<!-- 根节点 -->
+<div id="reactDemo">
+
+</div>
+<script type="text/babel">
+    var React = require('react');
+    var ReactDOM = require('react-dom');
+    var ReactBsTable  = require('react-bootstrap-table');
+    var BootstrapTable = ReactBsTable.BootstrapTable;
+    var TableHeaderColumn = ReactBsTable.TableHeaderColumn;
+
+    var products = [{
+        id: 1,
+        name: "Product1",
+        price: 120
+    }, {
+        id: 2,
+        name: "Product2",
+        price: 80
+    }];
+
+    ReactDOM.render(
+        <BootstrapTable data={products} striped hover>
+            <TableHeaderColumn isKey dataField='id'>Product ID</TableHeaderColumn>
+            <TableHeaderColumn dataField='name'>Product Name</TableHeaderColumn>
+            <TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
+        </BootstrapTable>,
+        document.getElementById('basic')
+    );
+</script>
+</body>
+</html>
