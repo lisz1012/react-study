@@ -21,14 +21,21 @@
                     bool:true
                 }
             }
+            fun() {
+                this.setState({bool:!this.state.bool})
+            }
             render() {
+                let text;
+                if (this.state.bool) {
+                    text = "你好"
+                } else {
+                    text = "你坏"
+                }
                 return (
                     <div>
                         我是组件
-                        <h1>函数实参传递</h1>
-                        <button onClick={this.fune.bind(this, "我是参数")}>bind方式绑定</button>
-                        <button onClick={()=>{this.fune("我是参数")}}>箭头函数方式绑定</button>
-                        <button onClick={(e)=>{this.funf("我是参数", e)}}>箭头函数方式绑定并传入事件对象</button>
+                        <h1>{text}</h1>
+                        <button onClick={()=>{this.fun()}}>箭头函数方式绑定</button>
                     </div>
                 )
             }
