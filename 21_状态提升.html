@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello</title>
+        <script src="node_modules/react/umd/react.development.js"></script>
+        <script src="node_modules/react-dom/umd/react-dom.development.js/"></script>
+        <script src="node_modules/babel-standalone/babel.min.js"></script>
+    </head>
+    <body>
+    <!-- 状态提升 多个组件需要反映相同的变化数据，提升到她们最近的父组件当中，父组件改变了状态后再通过props分发给各个子组件。
+     多个子组件需要利用到对方状态的情况下这个时候就要用到状态提升 -->
+    <!-- 根节点 -->
+        <div id="reactDemo">
+
+        </div>
+        <script type="text/babel">
+
+            class DemoA extends React.Component {
+                constructor(props) {
+                    super(props);
+                }
+                render() {
+                    return (
+                        <div>
+                            我是第1个组件 ----- {this.props.text}
+                        </div>
+                    );
+                }
+            }
+
+            class DemoB extends React.Component {
+                constructor(props) {
+                    super(props);
+                }
+                render() {
+                    return (
+                        <div>
+                            我是第2个组件 ----- {this.props.text}
+                        </div>
+                    );
+                }
+            }
+
+            class Com extends React.Component{
+                constructor(props) {
+                    super(props);
+                    this.state = {
+                         context: "我是两个人都想使用的数据"
+                    }
+                }
+                render() {
+                    return (
+                        <div>
+                            我是组件
+                            <button onClick={()=>{this.setState({context:"haha"})}}>点我修改</button>
+                            <DemoA text={this.state.context}/>
+                            <DemoB text={this.state.context}/>
+                        </div>
+                    );
+                }
+            }
+
+            ReactDOM.render(<Com/>, document.getElementById("reactDemo"))
+        </script>
+    </body>
+</html>
